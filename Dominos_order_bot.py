@@ -1,9 +1,12 @@
 #Hello!
 from selenium import webdriver
 from time import sleep
+import config
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import json
+
+print(config.email)
 
 driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get('https://www.dominos.co.uk/')
