@@ -11,7 +11,12 @@ sleep(4)
 
 with open('creds.json') as json_file:
     data = json.load(json_file)
+    print(data)
 
+email = data['email']
+password = data['pass']
+
+print(1)
 print(email)
 print(password)
 
