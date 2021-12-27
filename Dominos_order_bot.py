@@ -16,10 +16,6 @@ with open('creds.json') as json_file:
 email = data['email']
 password = data['pass']
 
-print(1)
-print(email)
-print(password)
-
 driver.find_element_by_xpath('//*[@id="onetrust-accept-btn-handler"]').click()
 sleep(1)
 
